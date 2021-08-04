@@ -1,0 +1,8 @@
+[submodule "sert121.github.io"]
+	path = sert121.github.io
+	url = https://github.com/sert121/sert121.github.io
+	branch = main
+[submodule "public"]
+	path = public
+	url = https://github.com/sert121/sert121.github.io
+	branch = main

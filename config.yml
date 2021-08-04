@@ -1,0 +1,143 @@
+baseURL: "https://sert121.github.io/"
+title: Yash More
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: false
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Yash More's Portfolio
+    description: "Yash More's Portfolio"
+    keywords: ["Yash More","Yash","More", "Portfolio","sert121","ashoka","Yash More Ashoka University" ,"Yash More Portfolio","More Yash","More Yash Google Scholar","Yash Computer Science"]
+    author: Me
+    # author: ["Me", "You"] # multiple authors
+    images: ["<link or path of image for opengraph, twitter-cards>"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: false
+    ShowShareButtons: false
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: false
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: true
+    hideSummary: True
+    showtoc: false
+    tocopen: false
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "<link / abs url>"
+        favicon16x16: "<link / abs url>"
+        favicon32x32: "<link / abs url>"
+        apple_touch_icon: "<link / abs url>"
+        safari_pinned_tab: "<link / abs url>"
+
+    label:
+        text: "Home"
+    # profile-mode
+    profileMode:
+        enabled: True # needs to be explicitly set
+        title: Yash More
+        subtitle: "Computer Science Undergraduate at Ashoka University"
+                 
+        subsubtitle: "Interests:  Machine Learning , Complex Systems , Cryptography"
+        imageUrl: ""
+        imageWidth: 0
+        imageHeight: 0
+        # imageTitle: my image
+        buttons:
+            - name: Projects
+              url: projects
+            - name: Experience
+              url: time
+            - name: Publications
+              url: publications
+    # home-info mode
+    homeInfoParams:
+        Title: "Home"
+        Content: Homepage
+    socialIcons:
+        - name: email
+          url: "mailto:yashrajmore29@gmail.com"
+        - name: other
+          url: "https://scholar.google.com/citations?user=nm8G-yoAAAAJ&hl=en"
+        - name: github
+          url: "https://github.com/sert121"
+        - name: twitter
+          url: "https://twitter.com/yash_347"
+    
+    analytics:
+        google:
+            SiteVerificationTag: "XYZabc"
+        bing:
+            SiteVerificationTag: "XYZabc"
+        yandex:
+            SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: false # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    editPost:
+        URL: "https://github.com/<path_to_repo>/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: About
+          name: About
+          url: about
+          weight: 10
+
+        - identifier: Projects
+          name: Projects
+          url: projects
+          weight: 10
+
+        - identifier: Publications
+          name: Publications
+          url: publications
+          weight: 10 
+
+        - identifier: Experience
+          name: Experience
+          url: /experience/timeline
+          weight: 10
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
